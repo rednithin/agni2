@@ -1,0 +1,33 @@
+[package]
+name = "agni2"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+routerify = "2"
+hyper = "0.14"
+tokio = { version = "1", features = ["full"] }
+socket2 = { version = "*", features = ["all"] }
+anyhow = "*"
+uuid = { version = "*", features = ["v4"] }
+derive_more = "*"
+tracing = "*"
+tracing-subscriber = { version = "*", features = ["default", "env-filter"] }
+tracing-futures = "*"
+chrono="*"
+# tracing-log = "*"
+tracing-bunyan-formatter = "*"
+pnet = "*"
+strong-xml = "*"
+lru-cache = "*"
+percent-encoding = "*"
+regex = "*"
+roxmltree = "*"
+tokio-util = { version = "*", features = ["io", "codec"] }
+url = "*"
+headers = "*"
+futures = "*"
+bytes = "*"
+mime_guess = "*"
